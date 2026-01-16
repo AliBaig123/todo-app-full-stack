@@ -12,6 +12,8 @@ app.get('/api/todos', (req, res) => {
   res.json(todos);
 });
 
+
+
 app.post('/api/todos', (req, res) => {
   const { text } = req.body;
   if (!text || text.trim() === '') {
