@@ -7,9 +7,11 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git credentialsId: 'github-token', url: 'https://github.com/AliBaig123/todo-app-full-stack.git' }
-            }
+    steps {
+        git credentialsId: 'github-token', url: 'https://github.com/AliBaig123/todo-app-full-stack.git'
+    }
+}
+
         }
 
         stage('Backend Install') {
